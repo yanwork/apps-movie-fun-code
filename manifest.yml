@@ -1,0 +1,10 @@
+---
+applications:
+- name: platform-acceleration-movie-fun
+  memory: 1G
+  path: target/moviefun.war
+  env:
+    TRUST_CERTS: api.run.pez.pivotal.io
+  services:
+    - moviefun-db
+    - moviefun-config-server
